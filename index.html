@@ -5,247 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CozyHouse</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 </head>
 <body>
-
-<div class="homepage mb-5">
-    <nav class="navbar navbar-expand-md navbar-light p-2">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="logo" height="50px">
-                Cozy<span class="navbar-span">House</span>
-            </a>
-            <button class="navbar-toggler" type="button"  data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 me-4 fw-bold" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 me-4 fw-bold" href="#products">PRODUCTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 me-4 fw-bold" href="/contact.html">CONTACT</a>
-                    </li>
-                </ul>
-              </div>
-                <div class="cart">
-                    <button id="cartButton" class="btn">
-                        <img id="cartImage" src="images/shoppingcart.png" alt="shoppingcart">
-                        <div id="cartAmount" class="cartAmount">0</div>
-                    </button>
-                </div>
-           
-        </div>
-    </nav>
-
-
-    <div class="container text-center box">
-        <div class="home">
-            <h3>Furniture Collection</h3>
-            <p class="quote">Your Path to Perfect Living: Get Inspired by Our Exclusive Furniture!</p>
-        </div>
-    </div>
-</div>
-
-
-
-<div id="workOuterShell">
-  <hr id="products" class="hidden">
-    <div class="container my-5">
-        <h2 class="text-center my-5">Our Products</h2>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid"  src="images/sofa.jpg" alt="brownsofa">
-              <div class="card-body">
-                <h5 class="card-title">Brown fabric sofa</h5>
-                <p class="card-text">199$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/orangesofa.jpg" alt="yellowsofa">
-              <div class="card-body">
-                <h5 class="card-title">Yellow leather sofa</h5>
-                <p class="card-text">149$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/faintingcouch.jpg" alt="faintingcouch">
-              <div class="card-body">
-                <h5 class="card-title">White leather bed</h5>
-                <p class="card-text">350$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/greensofa.jpg" alt="greensofa">
-              <div class="card-body">
-                <h5 class="card-title">Green Sofa</h5>
-                <p class="card-text">179$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/bed.jpg" alt="black-bed">
-              <div class="card-body">
-                <h5 class="card-title">Wooden Bed</h5>
-                <p class="card-text">199$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/chair.jpg" alt="chair">
-              <div class="card-body">
-                <h5 class="card-title">Brown leather Sofa</h5>
-                <p class="card-text">259$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/cozy-armchair.jpg" alt="cozy-armchair">
-              <div class="card-body">
-                <h5 class="card-title">Grey sofa</h5>
-                <p class="card-text">129$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/faintingcouch-real.jpg" alt="fainting-couch">
-              <div class="card-body">
-                <h5 class="card-title">Fainting Couch</h5>
-                <p class="card-text">59$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/anotherBed.jpg" alt="faintingcouch">
-              <div class="card-body">
-                <h5 class="card-title">Brown wood bed</h5>
-                <p class="card-text">219$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/Bedbed.jpg" alt="faintingcouch">
-              <div class="card-body">
-                <h5 class="card-title">White leather bed</h5>
-                <p class="card-text">299$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card item">
-              <img class="card-img-top img-fluid" src="images/Pallette bed.jpg" alt="faintingcouch">
-              <div class="card-body">
-                <h5 class="card-title">Pallet bed</h5>
-                <p class="card-text">169$</p>
-                <a  id="addButton" class="btn btn-primary">Add to basket</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-</div>
-
-<div class="loadMoreBtn">
-    <button id="loadMore" class="btn btn-outline-success">Load More</button>
-</div>
-
-
-<footer class="text-white text-center text-lg-start bg-dark">
-
-  <div class="container p-4">
-
-    <div class="row mt-4">
-
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">About company</h5>
-
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium deleniti quis nostrum architecto, sint eligendi laboriosam, velit dolor incidunt quisquam aperiam inventore nesciunt, fugiat alias aspernatur nam possimus aut adipisci sed!
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quibusdam voluptates dolores, quaerat nam eum inventore! Placeat enim ut praesentium?
-        </p>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
-
-        <div class="form-outline form-white mb-4">
-          <input type="text" id="formControlLg" class="form-control form-control-lg" />
-        </div>
-
-        <ul class="fa-ul" style="margin-left: 1.65em;">
-          <li class="mb-3">
-            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Prague, 00-967, Czech republic</span>
-          </li>
-          <li class="mb-3">
-            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">contact@example.com</span>
-          </li>
-          <li class="mb-3">
-            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 420 759 769 285</span>
-          </li>
+    <header>
+        <a href="#" class="logo">Cozy House</a>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="fa-regular fa-moon" id="darkmode">
         </ul>
-      </div>
+    </header>
 
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">Opening hours</h5>
+    <section class="home">
+        <div class="home-text">
+            <h1>Furtniture Collection</h1>
+            <h2>Our Path to Perfect Living:<br>  Get Inspired by Our Exclusive Furniture!</h2>
+            <a href="#" class="btn">View products</a>
+        </div>
+        <div class="home-img">
+            <img src="images/image1.jpg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/faintingcouch-real.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We are your reliable partner<br> for quality living!</h2></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quo iure rem ducimus tenetur deserunt commodi doloribus, quibusdam vel fuga?</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
 
-        <table class="table text-center text-white">
-          <tbody class="fw-normal">
-            <tr>
-              <td>Mon - Thu:</td>
-              <td>8am - 9pm</td>
-            </tr>
-            <tr>
-              <td>Fri - Sat:</td>
-              <td>8am - 1am</td>
-            </tr>
-            <tr>
-              <td>Sunday:</td>
-              <td>9am - 10pm</td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="products">
+        <div class="heading">
+            <span>Our products</span>
+            <h2>Products of the week</h2>
+        </div>
+          <div class="products-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/chair.jpg" alt="">
+                </div>
+                <h2>Brown leather sofa</h2>
+                <span>$199.99</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/greensofa.jpg" alt="">
+                </div>
+                <h2>Green sofa</h2>
+                <span>$179.99</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/orangesofa.jpg" alt="">
+                </div>
+                <h2>Yellow leather sofa</h2>
+                <span>$149.99</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+    </section>
+
+    <section class="services">
+        <div class="heading">
+            <span>Services</span>
+            <h2>We provide best and fast services</h2>
+        </div>
+        <div class="services-container">
+            <div class="s-box">
+              <i class="fa-solid fa-laptop"></i>
+              <h3>You Order</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+            </div>
+            <div class="s-box">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h3>Shipping</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+            </div>
+            <div class="s-box">
+              <i class="fa-solid fa-hand"></i>
+              <h3>Delivered</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-box">
+          <h3>Cozy House</h3>
+          <span>Connect With Us</span>
+          <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
       </div>
-    </div>
-  </div>
-</footer>
-<script src="js/loadmore.js"></script>
-<script src="js/script.js"></script>
+      <div class="contact-box">
+          <h3>Menu Links</h3>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </div>
+      <div class="contact-box address">
+          <h3>Contact</h3>
+          <i class="fa-solid fa-map-location-dot"><span>005, Lorem ipsum dolor, sit amet consectetur, Prague</span></i>
+          <i class="fa-solid fa-phone"><span>+420 777 666 999</span></i>
+          <i class="fa-solid fa-envelope"><span>Example@gmail.com</span></i>
+      </div>
+  </section>
+  <script src="script.js"></script>
 </body>
+</html>
